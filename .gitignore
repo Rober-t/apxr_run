@@ -1,0 +1,7 @@
+log
+tmp
+erl_crash.dump
+rebar3.crashdump
+_build
+.DS_Store
+experiments/*

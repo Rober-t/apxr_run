@@ -1,0 +1,16 @@
+{"1.1.0",
+[{<<"jsx">>,{pkg,<<"jsx">>,<<"2.10.0">>},0},
+ {<<"meck">>,{pkg,<<"meck">>,<<"0.8.13">>},0},
+ {<<"observer_cli">>,{pkg,<<"observer_cli">>,<<"1.4.1">>},0},
+ {<<"recon">>,{pkg,<<"recon">>,<<"2.4.0">>},0},
+ {<<"rocksdb">>,{pkg,<<"rocksdb">>,<<"1.0.0">>},0},
+ {<<"shards">>,{pkg,<<"shards">>,<<"0.6.0">>},0}]}.
+[
+{pkg_hash,[
+ {<<"jsx">>, <<"77760560D6AC2B8C51FD4C980E9E19B784016AA70BE354CE746472C33BEB0B1C">>},
+ {<<"meck">>, <<"FFEDB39F99B0B99703B8601C6F17C7F76313EE12DE6B646E671E3188401F7866">>},
+ {<<"observer_cli">>, <<"8C829BB28E3F316A361216314405FE296D8DD2FD7409DFA53FA4AC1CFF3797A0">>},
+ {<<"recon">>, <<"901FF78B39C754FB4D6FD72DCF0DBD398967BBD2E4D59C08D4D7AA44A73DE91D">>},
+ {<<"rocksdb">>, <<"887399657F50CBDB2C680051B0CDC9435BAF96BD1193CA3C868A7217670567E5">>},
+ {<<"shards">>, <<"678D292AD74A4598A872930F9B12251F43E97F6050287F1FB712FBFD3D282F75">>}]}
+].

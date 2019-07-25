@@ -1,0 +1,22 @@
+{application, apxr_run,
+ [{description, "APXR"},
+  {vsn, "0.1.0"},
+  {modules, [apxr_run_app, apxr_run_sup, polis_sup, polis_mgr]},
+  {registered, [polis_mgr]},
+  {applications, [
+    kernel,
+    stdlib,
+    compiler,
+    crypto,
+    sasl,
+    rocksdb,
+    shards,
+    recon
+    %elixir
+  ]},
+  {mod, {apxr_run_app, []}},
+  {env, []},
+  {maintainers, ["APXR"]},
+  {licenses, []},
+  {links, []}
+]}.
