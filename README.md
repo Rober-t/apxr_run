@@ -3,8 +3,6 @@
 A topology and parameter evolving universal learning network originally created
 by Gene Sher. See [Handbook of Neuroevolution Through Erlang](http://www.amazon.com/Handbook-Neuroevolution-Through-Erlang-Gene/dp/1461444624).
 
-![img](https://github.com/Rober-t/apxr_run/blob/master/img.png)
-
 --------------------
 ### Requirements
 
@@ -23,8 +21,6 @@ integration of the OTP application structure, replacement of the single scape
 process with a quad tree, converting the sensor -> scape and actuator -> scape
 processes to be asynchronous, dropping Mnesia in favour of RocksDB and initial
 work to integrate with Elixir.
-
-![nn_system](https://github.com/Rober-t/apxr_run/blob/master/nn_system.png)
 
 ------------------
 ### How to:
