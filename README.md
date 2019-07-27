@@ -1,7 +1,7 @@
 # apxr_run
 
 A topology and parameter evolving universal learning network originally created
-by Gene Sher. See [Handbook of Neuroevolution Through Erlang](http://www.amazon.com/Handbook-Neuroevolution-Through-Erlang-Gene/dp/1461444624).
+by Gene Sher.
 
 --------------------
 ### Requirements
@@ -29,74 +29,44 @@ work to integrate with Elixir.
 
     $ rebar3 compile
 
-------------------
-
 #### 2. Run Dialyzer (Erlang static analysis tool)
 
     $ rebar3 dialyzer
-
-------------------
 
 #### 3. Run Eunit (Unit tests)
 
     $ rebar3 do eunit, cover --verbose
 
-------------------
-
 #### 4. Run Xref (Cross reference analysis)
 
     $ rebar3 xref
 
-------------------
-
-#### 5. Run Checks
-
-    $ rebar3 check
-
-which runs the following:
-
-```
-[compile, xref, dialyzer, eunit]
-```
-
-------------------
-
-#### 7. Run (development)
+#### 5. Run
 
     $ rebar3 shell
     1> experiment_mgr:run().
 
-------------------
-
-#### 8. Generate release
+#### 6. Generate release
 
     $ rebar3 release -d -p priv/lib/elixir/ebin/
 
-------------------
-
-#### 9. Run release (development)
+#### 7. Run release
 
     $ _build/default/rel/apxr_run/bin/apxr_run console
 
-------------------
+#### 8. Observe
 
-#### 10. Monitor
-
-Development:
-```erlang
-% Erlang/OTP observer
+```
 1> observer:start().
 ```
 
-Production:
+or
+
 ```
-% observer_cli
 1> observer_cli:start().
 ```
 
-------------------
-
-#### 11. Conduct an experiment
+#### 9. Conduct an experiment
 
 The experiment_mgr process composes experiments by performing N evolutionary
 runs, and then produces statistical data and chart ready files of the various
@@ -126,7 +96,7 @@ Three benchmarks are included:
 See the `/doc/examples/benchmarks.md` for more information.
 
 --------------------
-### Benchmarks
+### Applications
 
 Two applications are included:
 - Flatland
