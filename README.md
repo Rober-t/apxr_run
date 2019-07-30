@@ -112,12 +112,12 @@ The most useful resource for developers working on this project will be the
 inline documentation.
 
 ##### General
-For a more general introduction, see the `/docs.md` directory for a quick
+For a more general introduction, see the `/docs` directory for a quick
 introduction to neuroevolution and related topics.
 
 For a more thorough introduction, the book "Handbook of Neuroevolution Through
 Erlang" by Gene Sher is highly recommended. Indeed, much of the content in the
-Docs section is taken from this book. As is the majority of the inline
+Docs section is taken from this book as is the majority of the inline
 documentation found in the source code. So, credit for the good stuff goes to
 him.
 
@@ -125,43 +125,7 @@ him.
 ### Conventions & rules
 
 Inaka's [erlang_guidelines](https://github.com/inaka/erlang_guidelines) should
-be used as the basis for things that may be used as reason to reject a PR.
-
---------------------
-### Future work
-
-There are still many features that can be added to this system. You could make
-the NNs modular, add Kohonen Map, Competitive NN, Hopfield Network, and other
-types of self organizing networking based modules.
-
-Optimizations could be made to separate the substrate into multiple parallel
-hypercubes, or feed this vector based representation to a GPU, which could then
-process it in parallel if implemented accordingly. It is possible to
-significantly accelerate the iterative rule encoding by, for example, converting
-the feedforward NNs into single functions, which can then be utilized
-independently by each neurode. A feedforward NN is after all just a function of
-functions, which can be represented in the form of: FF = f1(f2(f3(...)...)...),
-with the FF function then used directly by the substrate embedded neurodes. This
-would effectively make the entire SENN, excluding the sensors and actuators, be
-represented by a single process. By transforming the evolved feedforward NNs
-into single functions, then embedding those functions within each neurode, you
-are thus allowing each neurode to simply call on it as if it were a simple
-plasticity function.
-
-New mutation operators could be added, for example, pruning or the use of
-splitting. Committee machines using dead_pools could be added too.
-
-You could of course create new fitness functions that take into account the
-Cartesian distance of the connections between the neurodes within the substrate,
-for example, which would allow you to push for closely connected neural clusters.
-
-Additionally, a "crystallization" feature could be added where neural circuits
-which have been topologically stable during the NN's evolution are crystallized
-into a single function, a single processes represented module. New types of
-signal normalization preprocessors can be added as well.
-
-Lastly, the project could be interfaced with other languages to optimize for
-speed or to take advantage of various deep network engines.
+be used as the basis for things that may be used as a reason to reject a PR.
 
 --------------------
 ### Related publications
